@@ -3,6 +3,12 @@ public class Estado {
     private String nome;
     private Pais pais;
 
+    public Estado(String sigla, String nome, Pais pais) {
+        this.sigla = sigla;
+        this.nome = nome;
+        this.pais = pais;
+    }
+
     public String getSigla() {
         return sigla;
     }

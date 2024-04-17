@@ -6,6 +6,13 @@ public class PessoaFisica {
     private Date dataNascimento;
     private Endereco endereco;
 
+    public PessoaFisicaq(String nome, String sexo, Date dataNascimento, Endereco endereco) {
+        this.nome = nome;
+        this.sexo = sexo;
+        this.dataNascimento = dataNascimento;
+        this.endereco = endereco;
+    }
+
     public String getNome() {
         return nome;
     }

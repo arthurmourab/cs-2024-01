@@ -6,6 +6,15 @@ public class Endereco {
     private Bairro bairro;
     private TipoEndereco tipoEndereco;
 
+    public Endereco (int numero, String complemento, int cep, Logradouro logradouro, Bairro bairro, TipoEndereco tipoEndereco) {
+        this.numero = numero;
+        this.complemento = complemento;
+        this.cep = cep;
+        this.logradouro = logradouro;
+        this.bairro = bairro;
+        this.tipoEndereco = tipoEndereco;
+    }
+
     public int getNumero() {
         return numero;
     }
