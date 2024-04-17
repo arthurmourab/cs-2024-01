@@ -1,5 +1,7 @@
 public class Endereco {
     private int numero;
-    private String Complemento;
-    private int CEP;
+    private String complemento;
+    private int cep;
+    private Logradouro logradouro;
+    private Bairro bairro;
 }
