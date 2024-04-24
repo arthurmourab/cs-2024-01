@@ -11,8 +11,11 @@ public class Login {
         this.senha = senha;
     }
 
-    boolean fazerLogin(String usuario, String senha) {
-
+    public boolean fazer_login(String usuario, String senha) throws LoginInvalidoException {
+        if (this.usuario.equals(usuario) && this.senha.equals(senha)) {
+            return true;
+        } else {
+            throw new LoginInvalidoException("Usuário ou senha incorretos.");
+        }
     }
-
 }
